@@ -650,7 +650,11 @@ body {
             font-weight: bold;
             display: flex;
             align-items: center;
-            justify-content: center; } }
+            justify-content: center; }
+        .mainProductos .productos .contenedor__producto .cardProducto:hover {
+          transform: scale(1.1, 1.1);
+          background-color: #660099;
+          color: #fff; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
   .mainProductos {
@@ -739,7 +743,11 @@ body {
             font-weight: bold;
             display: flex;
             align-items: center;
-            justify-content: center; } }
+            justify-content: center; }
+        .mainProductos .productos .contenedor__producto .cardProducto:hover {
+          transform: scale(1.1, 1.1);
+          background-color: #660099;
+          color: #fff; } }
 
 @media only screen and (min-width: 1024px) {
   .mainProductos {
@@ -830,7 +838,11 @@ body {
             font-weight: bold;
             display: flex;
             align-items: center;
-            justify-content: center; } }
+            justify-content: center; }
+        .mainProductos .productos .contenedor__producto .cardProducto:hover {
+          transform: scale(1.1, 1.1);
+          background-color: #660099;
+          color: #fff; } }
 
 @media only screen and (max-width: 768px) {
   .mainSucursales {

@@ -85,6 +85,11 @@
                         }
                     }  
                 }
+                .cardProducto:hover {
+                    transform: scale(1.1,1.1);
+                    background-color: $colorVioleta;
+                    color: $colorBlanco;
+                }
             }
         }
     }
@@ -172,6 +177,11 @@
                         }
                     }  
                 }
+                .cardProducto:hover {
+                    transform: scale(1.1,1.1);
+                    background-color: $colorVioleta;
+                    color: $colorBlanco;
+                }
             }
         }
     }
@@ -258,7 +268,12 @@
                             font-weight: bold;
                             @include flexCenterCenter;
                         }
-                    }  
+                    }
+                }
+                .cardProducto:hover {
+                    transform: scale(1.1,1.1);
+                    background-color: $colorVioleta;
+                    color: $colorBlanco;
                 }
             }
         }
