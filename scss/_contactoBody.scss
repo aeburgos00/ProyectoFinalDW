@@ -1,0 +1,131 @@
+@media only screen and (max-width: 768px) {
+    .contenedor__formulario {
+        .contenedor__formulario--contactanos {
+            margin-left: 40px;
+            .formulario__contactanos {
+                font-size: 24px;
+            }
+        }
+        .contenedor__formulario--campos{
+            margin: 0 60px 20px 40px;
+            .formulario__campos--titulos {
+                display: flex;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .formulario__campos--input {
+                @include tamBox(100%, 24px);
+                padding: 0 0 0 20px;
+                border: 2px solid silver;
+                border-radius: 5px;
+            }
+            .formulario__descripcion{
+                @include tamBox(100%, 120px);
+                padding: 4px 0 0 20px;
+                border: 2px solid silver;
+                border-radius: 5px;
+            }
+        }
+        .contenedor__formulario--boton{
+            display: flex;
+            justify-content: right;
+            margin: 20px 40px 40px 0;
+            .formulario__boton{
+                @include tamBox(200px, 60px);
+                border: 3px solid $colorVioleta;
+                @include colorYbg($colorVioleta, $colorAmarillo);
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                box-shadow: 2px 2px 10px 1px $colorNegro;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .contenedor__formulario {
+        .contenedor__formulario--contactanos {
+            margin-left: 40px;
+            .formulario__contactanos {font-size: 24px;}
+        }
+        .contenedor__formulario--campos{
+            margin: 0 60px 20px 40px;
+            .formulario__campos--titulos {
+                display: flex;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .formulario__campos--input {
+                @include tamBox(100%, 24px);
+                padding: 0 0 0 20px;
+                border: 2px solid silver;
+                border-radius: 5px;
+            }
+            .formulario__descripcion{
+                @include tamBox(100%, 120px);
+                padding: 0 0 0 20px;
+                border: 2px solid silver;
+                border-radius: 5px;
+            }
+        }
+        .contenedor__formulario--boton{
+            display: flex;
+            justify-content: right;
+            margin: 20px 40px 40px 0;
+            .formulario__boton{
+                @include tamBox(200px, 60px);
+                border: 3px solid $colorVioleta;
+                @include colorYbg($colorVioleta, $colorAmarillo);
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                box-shadow: 2px 2px 10px 1px $colorNegro;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .contenedor__formulario {
+        .contenedor__formulario--contactanos {
+            margin-left: 40px;
+            .formulario__contactanos {font-size: 24px;}
+        }
+        .contenedor__formulario--campos{
+            margin: 0 60px 20px 40px;
+            .formulario__campos--titulos {
+                display: flex;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .formulario__campos--input {
+                @include tamBox(100%, 24px);
+                padding: 0 0 0 20px;
+                border: 2px solid silver;
+                border-radius: 5px;
+            }
+            .formulario__descripcion{
+                @include tamBox(100%, 120px);
+                padding: 4px 0 0 20px;
+                border: 2px solid silver;
+                border-radius: 5px;
+            }
+        }
+        .contenedor__formulario--boton{
+            display: flex;
+            justify-content: right;
+            margin: 20px 40px 40px 0;
+            .formulario__boton{
+                @include tamBox(200px, 60px);
+                border: 3px solid $colorVioleta;
+                @include colorYbg($colorVioleta, $colorAmarillo);
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                box-shadow: 2px 2px 10px 1px $colorNegro;
+            }
+        }
+    }
+}

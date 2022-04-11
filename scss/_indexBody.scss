@@ -1,0 +1,113 @@
+// INDEX HECHO CON BOOTSTRAP
+@media only screen and (max-width: 768px) {
+    #body__bootstrap{
+        background-color: $colorLila;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        h1{display: none;}
+        .main__bootstrap{
+            .img-carrusel {max-height: 40rem;}
+            .titulos{
+                height: 40px;
+                @include flexCenterCenter;
+                .font-titulos{
+                    font-size: 16px;
+                }
+            }
+            .card {
+                background-color: transparent;
+                border: 2px solid $colorVioletaOscuro;
+                box-shadow: 5px 5px 10px 0 $colorNegro;
+                margin: 16px 0;
+                .img-mt-card {
+                    margin-top: 16px !important;
+                }
+                .img-card-sucur {
+                    width: 90%;
+                    height: 250px;
+                }
+            }
+            .prod2, .prod3 {
+                display: none;
+            }
+            .sucur2, .sucur3 {
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    #body__bootstrap{
+        background-color: $colorLila;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        h1{display: none;}
+        .main__bootstrap{
+            .img-carrusel {max-height: 40rem;}
+            .titulos{
+                height: 48px;
+                @include flexCenterCenter;
+                .font-titulos{
+                    font-size: 20px;
+                }
+            }
+            .card {
+                background-color: transparent;
+                border: 2px solid $colorVioletaOscuro;
+                box-shadow: 5px 5px 10px 0 $colorNegro;
+                margin: 16px 0;
+                .img-mt-card {
+                    margin-top: 16px !important;
+                }
+                .img-card-sucur {
+                    width: 90%;
+                    height: 250px;
+                }
+            }
+            .prod3 {
+                display: none;
+            }
+            .sucur3 {
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px) {
+    #body__bootstrap{
+        background-color: $colorLila;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        h1{display: none;}
+        .main__bootstrap{
+            .img-carrusel {max-height: 40rem;}
+            .titulos{
+                height: 56px;
+                @include flexCenterCenter;
+                .font-titulos{
+                    font-size: 24px;
+                }
+            }
+            .card {
+                background-color: transparent;
+                border: 2px solid $colorVioletaOscuro;
+                box-shadow: 5px 5px 10px 0 $colorNegro;
+                margin: 24px 0;
+                .img-mt-card {
+                    margin-top: 16px !important;
+                }
+                .img-card-sucur {
+                    width: 90%;
+                    height: 250px;
+                }
+            }
+            
+        }
+    } 
+}
+.mar-0 {margin: 0;}
+.justify-content-spaceevenly{justify-content: space-evenly;}
+

@@ -1,0 +1,228 @@
+@media only screen and (max-width: 768px) {
+    .mainSucursales {
+        display: grid;
+        grid-template-areas: "aside"
+        "sucursal";
+        .aside__sucursales {
+            grid-area: aside;
+            margin: 0 0 0 40px;
+            .aside__sucursales--cantidad {
+                font-size: 16px;
+                margin-top: 0;
+            }
+            .aside__sucursales--titulo {
+                font-size: 24px;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            div{
+                ul{
+                    .aside__sucursales--sucursal{
+                        margin: 0 0 10px -40px;
+                        a {
+                            color: #333;
+                            font-size: 18px;
+                            font-size: 500;
+                        }
+                    }
+                }
+            }
+        }
+        .sucursales {
+            grid-area: sucursal;
+            display: grid;
+            grid-template-areas: "info"
+            "imagen";
+            margin: 20px 0 0 0;
+            .sucursales__textos {
+                grid-area: info;
+                .sucursales__textos--titulo {
+                    @include flexCenterCenter;
+                    font-size: 32px;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    margin: 0;
+                }
+                .sucursales__textos--subtitulo {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin: 20px 0 10px 40px;
+                }
+                .sucursales__textos--info {margin: 0 0 0 40px;}
+            }
+            .contenedor__sucursal--imagen {
+                @include flexCenterCenter;
+                grid-area: imagen;
+                .contenedor__imagenSucursal {
+                    @include tamBox(80%, 200px);
+                    overflow: hidden;
+                    margin: 40px 20px;
+                    position: relative;
+                    border-radius: 10px;
+                    .cardSucursales__imagen {
+                        position: absolute;
+                        width: 500px;
+                        left: -100%;
+                        right: -100%;
+                        top: -100%;
+                        bottom: -100%;
+                        margin: auto;
+                        min-height: 100%;
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .mainSucursales {
+        display: grid;
+        grid-template-areas: "aside sucursal";
+        grid-template-columns: 30% 70%;
+
+        .aside__sucursales {
+            grid-area: aside;
+            margin: 0 0 0 40px;
+            .aside__sucursales--cantidad {
+                font-size: 16px;
+                margin-top: 0;
+            }
+            .aside__sucursales--titulo {
+                font-size: 24px;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            div{
+                ul{
+                    .aside__sucursales--sucursal{
+                        margin: 0 0 10px -40px;
+                        a {
+                            color: #333;
+                            font-size: 18px;
+                            font-size: 500;
+                        }
+                    }
+                }
+            }
+        }
+        .sucursales {
+            grid-area: sucursal;
+            display: grid;
+            grid-template-areas: "info"
+            "imagen";
+            .sucursales__textos {
+                grid-area: info;
+                .sucursales__textos--titulo {
+                    font-size: 32px;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    margin: 0;
+                }
+                .sucursales__textos--subtitulo {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin: 20px 0 10px 0;
+                }
+                .sucursales__textos--info {margin: 0px;}
+            }
+            .contenedor__sucursal--imagen {
+                grid-area: imagen;
+                .contenedor__imagenSucursal {
+                    margin: 20px 0 10px 0 !important;
+                    @include tamBox(90%, 300px);
+                    overflow: hidden;
+                    position: relative;
+                    border-radius: 10px;
+                    .cardSucursales__imagen {
+                        position: absolute;
+                        width: 500px;
+                        left: -100%;
+                        right: -100%;
+                        top: -100%;
+                        bottom: -100%;
+                        margin: auto;
+                        min-height: 100%;
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .mainSucursales {
+        display: grid;
+        grid-template-areas: "aside sucursal";
+        grid-template-columns: 20% 80%;
+        .aside__sucursales {
+            grid-area: aside;
+            margin: 0 0 0 40px;
+            .aside__sucursales--cantidad {
+                font-size: 16px;
+                margin-top: 0;
+            }
+            .aside__sucursales--titulo {
+                font-size: 24px;
+                text-transform: uppercase;
+            }
+            div{
+                ul{
+                    .aside__sucursales--sucursal{
+                        margin: 0 0 10px -40px;
+                        a {
+                            color: #333;
+                            font-size: 20px;
+                            font-size: 500;
+                        }
+                    }
+                }
+            }
+        }
+        .sucursales {
+            grid-area: sucursal;
+            display: grid;
+            grid-template-areas: "info imagen";
+            grid-template-columns: 50% 50%;
+            margin: 0 0 40px 0;
+            .sucursales__textos {
+                grid-area: info;
+                .sucursales__textos--titulo {
+                    font-size: 32px;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    margin: 0;
+                }
+                .sucursales__textos--subtitulo {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin: 20px 0 10px 0;
+                }
+                .sucursales__textos--info {margin: 0;}
+            }
+            .contenedor__sucursal--imagen {
+                grid-area: imagen;
+                .contenedor__imagenSucursal {
+                    margin: 0 !important;
+                    @include tamBox(70%, 20vw);
+                    overflow: hidden;
+                    position: relative;
+                    border-radius: 10px;
+                    .cardSucursales__imagen {
+                        position: absolute;
+                        width: 500px;
+                        left: -100%;
+                        right: -100%;
+                        top: -100%;
+                        bottom: -100%;
+                        margin: auto;
+                        min-height: 100%;
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
